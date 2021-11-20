@@ -40,13 +40,14 @@ Cocktail_server
 |
 |- functions
       |
-      |- config
       |
       |- api
-      |      |
-      |      |- routes
-      |
+          |- routes
+              |- post
+              |- suggest
+      |- config
       |- constants
+      |- lib
       |- db
 ```
 
