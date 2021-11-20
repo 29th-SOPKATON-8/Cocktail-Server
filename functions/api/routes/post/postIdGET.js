@@ -13,9 +13,6 @@ module.exports = async (req, res) => {
     try {
       client = await db.connect(req);
       const posts = await postDB.getPostsBySuggestId(client, id);
-      let result=[];
-       console.log(id)
-      
       res.status(statusCode.OK).send(util.success(statusCode.OK, responseMessage.READ_ONE_POST_SUCCESS, posts));
     } catch (error) {
       functions.logger.error(`[ERROR] [${req.method.toUpperCase()}] ${req.originalUrl}`, `[CONTENT] ${error}`);
