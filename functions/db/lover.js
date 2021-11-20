@@ -14,3 +14,5 @@ const addPost = async (client, name) => {
     );
     return convertSnakeToCamel.keysToCamel(rows[0]);
 }
+
+module.exports = { addPost };
