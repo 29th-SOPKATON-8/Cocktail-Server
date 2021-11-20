@@ -1,7 +1,7 @@
 const _ = require('lodash');
 const convertSnakeToCamel = require('../lib/convertSnakeToCamel');
 
-const addPost = async (client, name) => {
+const addLover = async (client, name) => {
     const { rows } = await client.query(
         `
         INSERT INTO lover
@@ -15,4 +15,4 @@ const addPost = async (client, name) => {
     return convertSnakeToCamel.keysToCamel(rows[0]);
 }
 
-module.exports = { addPost };
+module.exports = { addLover };

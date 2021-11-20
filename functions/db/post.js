@@ -11,3 +11,19 @@ const getPostsBySuggestId = async (client, suggestId) => {
     );
     return convertSnakeToCamel.keysToCamel(rows);
   };
+
+  const postSuggestImpression = async (client, content) => {
+    const { rows } = await client.query(
+      `
+      INSERT INTO post
+      (content)
+      VALUES
+      ($1)
+      RETURNING *
+      `,
+      [content]
+    );
+    return convertSnakeToCamel.keysToCamel(rows[0]);
+  }
+
+module.exports = { getPostsBySuggestId, postSuggestImpression };
