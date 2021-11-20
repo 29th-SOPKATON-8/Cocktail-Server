@@ -9,10 +9,13 @@
 
 이 곳에서 각자 개발 담당 부분 정리입니다.
 
-- 이름 - 무엇 무엇을 했어요
-  - routes/api
-- 이름 - 무엇 무엇을 했어요
-  - routes/api
+- 이제준
+  - api/routes/post/trashPOST
+  - api/routes/suggest/okGET
+  - api/routes/suggest/POST
+- 최진영
+  - api/routes/suggest/idGET
+  - api/routes/suggest/postIdGET
 
 ## Code Convention / 코드 컨벤션
 
