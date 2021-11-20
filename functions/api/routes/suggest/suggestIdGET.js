@@ -3,9 +3,9 @@ const util = require('../../../lib/util');
 const statusCode = require('../../../constants/statusCode');
 const responseMessage = require('../../../constants/responseMessage');
 const db = require('../../../db/db');
-const { suggestDB } = require('../../../db/suggest');
+const { suggestDB } = require('../../../db');
 
-module.exports = async (req, res) => { //단계별 소감들 조회
+module.exports = async (req, res) => { 
     const { id } = req.params;
     if (!id) return res.status(statusCode.BAD_REQUEST).send(util.fail(statusCode.BAD_REQUEST, responseMessage.NULL_VALUE));
     let client;
