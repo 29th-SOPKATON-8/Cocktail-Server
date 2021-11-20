@@ -64,8 +64,7 @@ Cocktail_server
 ## API Specification / API 명세서(Route List)
 
 ### Datagrip Table 노션에 있습니다.
-
-https://www.notion.so/4d03a0e205ea48b3a112166414006b9e?v=7fcb8363b9814d548583d452edc6585c
+https://www.notion.so/server-6c1dd2e841804d20be5c8f8b31235ff4
 
 ## Base URI / Base URI 링크
 
