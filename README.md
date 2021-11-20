@@ -2,8 +2,8 @@
 
 # Service Name, description / 서비스 이름과 소개
 
-🔥Project Title: 칵퉤일  
-📜description: 칵~ 퉤! 하고 일어나라. 안좋은 공동체에서 벗어나기.
+🔥Project Title: 전남친 토스트
+📜description: 전남친 토스트 그리워 하지말고, 깔끔하게 잊어먹자 !
 
 ## Development Part / 각자 개발 담당 부분
 
