@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/post/:id', require('./postIdGET'));
-router.post('/post', require('./postSuggestPOST'));
+router.get('/:id', require('./postIdGET'));
+router.get('/suggest', require('./postSuggestPOST'));
 
 module.exports = router;
