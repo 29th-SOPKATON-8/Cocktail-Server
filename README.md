@@ -2,7 +2,7 @@
 
 # Service Name, description / 서비스 이름과 소개
 
-🔥Project Title: 전남친 토스트
+🔥Project Title: 전남친 토스트  
 📜description: 전남친 토스트 그리워 하지말고, 깔끔하게 잊어먹자 !
 
 ## Development Part / 각자 개발 담당 부분
