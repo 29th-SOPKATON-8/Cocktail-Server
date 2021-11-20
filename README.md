@@ -11,11 +11,10 @@
 
 - 이제준
   - api/routes/lover/trashPOST
-  - api/routes/suggest/okGET
-  - api/routes/suggest/POST
+  - api/routes/post/postSuggestPOST
 - 최진영
-  - api/routes/suggest/idGET
-  - api/routes/post/suggestIdGET
+  - api/routes/suggest/suggestIdGET
+  - api/routes/post/postIdGET
 
 ## Code Convention / 코드 컨벤션
 
