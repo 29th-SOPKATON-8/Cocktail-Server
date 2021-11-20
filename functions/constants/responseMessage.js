@@ -37,4 +37,7 @@ module.exports = {
   TOKEN_EXPIRED: '토큰이 만료되었습니다.',
   TOKEN_INVALID: '토큰이 유효하지 않습니다.',
   TOKEN_EMPTY: '토큰이 없습니다.',
+
+  READ_ONE_SUGGEST_SUCCESS: '제안 조회 성공',
+  READ_ONE_SUGGEST_FAIL:'제안 조회 실패'
 };

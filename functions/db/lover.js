@@ -14,5 +14,15 @@ const addPost = async (client, name) => {
     );
     return convertSnakeToCamel.keysToCamel(rows[0]);
 }
-
-module.exports = { addPost };
+const getLovernameById = async (client, loverId) => {
+    const { rows } = await client.query(
+        `
+        SELECT name FROM lover
+        JOIN post ON lover.id=post.lover_id 
+        WHERE id = $1
+        `,
+        [loverId],
+    );
+    return convertSnakeToCamel.keysToCamel(rows);
+};
+module.exports = { addPost,getLovernameById };
