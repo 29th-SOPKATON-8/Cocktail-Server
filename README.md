@@ -45,6 +45,7 @@ Cocktail_server
       |
       |- api
           |- routes
+              |- lover
               |- post
               |- suggest
       |- config
