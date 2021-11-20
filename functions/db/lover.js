@@ -9,7 +9,7 @@ const addLover = async (client, name) => {
         VALUES
         ($1)
         RETURNING *
-        `
+        `,
         [name]
     );
     return convertSnakeToCamel.keysToCamel(rows[0]);

@@ -4,7 +4,7 @@ const convertSnakeToCamel = require('../lib/convertSnakeToCamel');
 const getPostsBySuggestId = async (client, suggestId) => {
     const { rows } = await client.query(
       `
-      SELECT content,lover_id FROM post
+      SELECT content,name FROM post
       JOIN lover ON lover.id=post.lover_id 
       WHERE suggest_id = $1
       `,

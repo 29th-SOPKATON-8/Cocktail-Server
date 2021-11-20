@@ -14,17 +14,9 @@ module.exports = async (req, res) => {
       client = await db.connect(req);
       const posts = await postDB.getPostsBySuggestId(client, id);
       let result=[];
-      for(post of posts){
-        let obj;
-        obj['content']=post.content;
-        let name;
-        name=getLovernameById(client,post.loverId);
-        obj['name']=name;
-        result.push(obj);
-        console.log(result)
-      }
+       console.log(id)
       
-      res.status(statusCode.OK).send(util.success(statusCode.OK, responseMessage.READ_ONE_POST_SUCCESS, result));
+      res.status(statusCode.OK).send(util.success(statusCode.OK, responseMessage.READ_ONE_POST_SUCCESS, posts));
     } catch (error) {
       functions.logger.error(`[ERROR] [${req.method.toUpperCase()}] ${req.originalUrl}`, `[CONTENT] ${error}`);
       console.log(error);
