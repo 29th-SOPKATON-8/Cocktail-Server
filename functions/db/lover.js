@@ -25,4 +25,4 @@ const getLovernameById = async (client, loverId) => {
     );
     return convertSnakeToCamel.keysToCamel(rows);
 };
-module.exports = { addPost,getLovernameById };
+module.exports = { addLover ,getLovernameById };
