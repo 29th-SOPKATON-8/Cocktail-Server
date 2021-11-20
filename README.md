@@ -63,5 +63,8 @@ Cocktail_server
 
 ## API Specification / API 명세서(Route List)
 
-baseURI : https://asia-northeast3-wesopt29-328c5.cloudfunctions.net/api
 https://www.notion.so/4d03a0e205ea48b3a112166414006b9e?v=7fcb8363b9814d548583d452edc6585c
+
+## Base URI / Base URI 링크
+
+https://asia-northeast3-wesopt29-328c5.cloudfunctions.net/api
