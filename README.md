@@ -56,8 +56,4 @@ Cocktail_server
 
 ## API Specification / API 명세서(Route List)
 
-이 부분은 (Route List)에 관한 내용입니다.
-
-```
-예시
-```
+https://www.notion.so/4d03a0e205ea48b3a112166414006b9e?v=7fcb8363b9814d548583d452edc6585c
