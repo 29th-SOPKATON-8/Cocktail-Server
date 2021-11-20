@@ -24,6 +24,7 @@ module.exports = {
 
   // 포스트
   ADD_ONE_POST_SUCCESS: '포스트 추가 성공',
+  ADD_NAME_POST_SUCCESS: '이름 추가 성공',
   READ_ONE_POST_SUCCESS: '포스트 조회 성공',
   READ_ALL_POSTS_SUCCESS: '모든 포스트 조회 성공',
   UPDATE_ONE_POST_SUCCESS: '포스트 수정 성공',

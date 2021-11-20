@@ -3,25 +3,26 @@ const util = require('../../../lib/util');
 const statusCode = require('../../../constants/statusCode');
 const responseMessage = require('../../../constants/responseMessage');
 const db = require('../../../db/db');
-const { loverDB } = require('../../../db/lover');
+const { postDB } = require('../../../db/post');
 
 module.exports = async (req, res) => {
-    const { name } = req.body;
+    const { suggestId ,content } = req.body;
 
-    if(!name) return res.status(statusCode.BAD_REQUEST).send(util.fail(statusCode.BAD_REQUEST, responseMessage.NULL_VALUE));
+    if(!content) return res.status(statusCode.BAD_REQUEST).send(util.fail(statusCode.BAD_REQUEST, responseMessage.NULL_VALUE));
 
     let client;
-    
+
     try {
         client = await db.connect(req);
-        const lover = await loverDB.addLover(client, name);
-        
-        res.status(statusCode.OK).send(util.success(statusCode.OK, responseMessage.ADD_NAME_POST_SUCCESS));
-    } catch (error) {
+        const suggestpost = await postDB.postSuggestImpression(content);
+
+        res.status(statusCode.OK).send(util.success(statusCode.OK, responseMessage.ADD_ONE_POST_SUCCESS));
+      } catch (error) {
         functions.logger.error(`[ERROR] [${req.method.toUpperCase()}] ${req.originalUrl}`, `[CONTENT] ${error}`);
         console.log(error);
+    
         res.status(statusCode.INTERNAL_SERVER_ERROR).send(util.fail(statusCode.INTERNAL_SERVER_ERROR, responseMessage.INTERNAL_SERVER_ERROR));
-    } finally {
+      } finally {
         client.release();
-    }
-};
+      }
+}
