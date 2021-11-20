@@ -52,12 +52,19 @@ Cocktail_server
       |- lib
       |- db
 ```
+
 ## package.json / package.json 캡쳐
+
 ![package-json](https://user-images.githubusercontent.com/81547780/142740656-9ed9d7ea-5381-43c6-9da9-2d835e8a0644.PNG)
 
 ## ERD / ERD 캡쳐
+
 ![ERD](https://user-images.githubusercontent.com/81547780/142740678-21204a1a-33eb-4a2b-bc0a-8af41cbc73b3.PNG)
 
 ## API Specification / API 명세서(Route List)
 
 https://www.notion.so/4d03a0e205ea48b3a112166414006b9e?v=7fcb8363b9814d548583d452edc6585c
+
+## Base URI / Base URI 링크
+
+https://asia-northeast3-wesopt29-328c5.cloudfunctions.net/api
