@@ -15,7 +15,7 @@
   - api/routes/suggest/POST
 - 최진영
   - api/routes/suggest/idGET
-  - api/routes/suggest/postIdGET
+  - api/routes/post/suggestIdGET
 
 ## Code Convention / 코드 컨벤션
 
