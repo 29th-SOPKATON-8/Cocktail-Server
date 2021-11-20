@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/suggest/:id', require('./suggestIdGET')); //?‹¨ê³„ë³„ ì§ˆë¬¸ ? œ?•ˆ ì¡°íšŒ
+router.get('/:id', require('./suggestIdGET'));
 
 module.exports = router;

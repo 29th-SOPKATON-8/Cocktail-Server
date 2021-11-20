@@ -13,16 +13,16 @@ const getPostsBySuggestId = async (client, suggestId) => {
     return convertSnakeToCamel.keysToCamel(rows);
   };
 
-  const postSuggestImpression = async (client, content) => {
+  const postSuggestImpression = async (client, suggest_id, content) => {
     const { rows } = await client.query(
       `
       INSERT INTO post
-      (content)
+      (suggest_id, content)
       VALUES
-      ($1)
+      ($1, $2)
       RETURNING *
       `,
-      [content]
+      [suggest_id, content]
     );
     return convertSnakeToCamel.keysToCamel(rows[0]);
   }
